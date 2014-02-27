@@ -20,16 +20,16 @@ configure(allprojects) {
     targetCompatibility=1.5
 
     ext {
-      springSocialVersion = '1.1.0.BUILD-SNAPSHOT'
+      springSocialVersion = '1.1.0.DEPENDENCIES'
       hamcrestVersion = '1.3'
-      jacksonVersion = '2.2.2'
+      jacksonVersion = '2.3.1'
       junitVersion = '4.11'
       mockitoVersion = '1.9.5'
       servletApiVersion = '3.0.1'
-      springVersion = '4.0.1.RELEASE'
+      springVersion = '4.0.3.DEPENDENCIES'
       springReleaseVersion = "latest.release"
       springSnapshotVersion = "latest.integration"
-      springSecurityCryptoVersion = '3.2.0.RELEASE'
+      springSecurityCryptoVersion = '4.0.0.DEPENDENCIES'
     }
 
     [compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:none']
@@ -166,7 +166,7 @@ configure(rootProject) {
 
     dependencies { // for integration tests
     }
-    
+
     task api(type: Javadoc) {
         group = 'Documentation'
         description = 'Generates aggregated Javadoc API documentation.'
